@@ -4,9 +4,9 @@
   "description": "Learning me some webpack",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --host 0.0.0.0 --port 3000 --public tsvm.webpack-games:3000"
+    "dev": "webpack-dev-server --host 0.0.0.0 --port 3000 --public tsvm.webpack-games:3000",
+    "heroku-postbuild": "webpack --config ./webpack.config.js --progress"
   },
-  "heroku-postbuild": "webpack --config ./webpack.config.js --progress",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sauntimo/webpack-games.git"
